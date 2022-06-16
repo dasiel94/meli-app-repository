@@ -1,0 +1,14 @@
+<span
+  class="text-secondary font-size8"
+  [ngClass]="{ 'font-weight-bold': i === categories.length }"
+  *ngFor="let category of categories; index as i"
+>
+  {{ category }}
+  <span
+    [hidden]="
+      isEmptyCategory(categories.length) &&
+      categories.indexOf(category) === categories.length - 1
+    "
+    >></span
+  >
+</span>

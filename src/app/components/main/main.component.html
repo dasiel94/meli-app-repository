@@ -1,0 +1,46 @@
+<nav class="row no-gutters w-100 position-fixed justify-content-center">
+  <div class="col-10">
+    <div class="row mx-0 justify-content-center">
+      <div class="col-auto pl-0 pr-4 my-auto">
+        <img
+          draggable="false"
+          ondragstart="return false;"
+          (contextmenu)="(false)"
+          class="d-block py-2 img-fluid cursor-pointer"
+          src="assets/img/Logo_ML.png"
+          alt="Logo ML"
+          [routerLink]="['/']"
+        />
+      </div>
+      <div class="col px-0 my-auto">
+        <div class="form-inline m-0">
+          <div class="input-group w-100">
+            <input
+              type="search"
+              class="form-control search-box"
+              placeholder="Nunca dejes de buscar"
+              aria-label="Nunca dejes de buscar"
+              aria-describedby="button-addon2"
+              (keyup.enter)="search()"
+              [(ngModel)]="query"
+            />
+            <div class="input-group-append">
+              <button
+                class="btn btn-light btn-search"
+                type="button"
+                id="button-addon2"
+                (click)="search()"
+              >
+                <img
+                  src="assets/img/ic_Search.png"
+                  class="d-block img-fluid"
+                  alt="search"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

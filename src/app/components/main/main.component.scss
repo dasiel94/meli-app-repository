@@ -1,0 +1,25 @@
+@import "../../../assets/scss/colors.scss";
+@import "../../../assets/scss/font-sizes.scss";
+
+nav {
+  background-color: $primary;
+  height: 55px;
+  top: 0;
+  z-index: 1000;
+}
+
+.search-box {
+  height: 35px !important;
+  border: none !important;
+  border-radius: 1px !important;
+  &::placeholder,
+  &::-webkit-input-placeholder,
+  &:-ms-input-placeholder {
+    color: $secondary;
+    font-size: $font-size5;
+  }
+}
+
+.btn-search {
+  height: 35px !important;
+}
